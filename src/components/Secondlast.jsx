@@ -48,7 +48,6 @@ const style = {
     width: "100%",
     height: "100%",
     position: "relative",
-    backgroundColor: "#F4F5F6",
   },
   container: {
     maxWidth: { lg: "1400px" },

@@ -1,3 +1,4 @@
+import Benefits from "@/components/Benefits";
 import Companies from "@/components/Companies";
 import Hero from "@/components/Hero";
 import Journey from "@/components/Journey";
@@ -20,6 +21,7 @@ export default function Home() {
       <Journey />
       <SmarterAi />
       <Secondlast />
+      <Benefits />
     </>
   );
 }

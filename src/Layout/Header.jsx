@@ -63,7 +63,11 @@ const style = {
   main: {
     width: "100%",
     height: "100%",
-    position: "relative",
+    position: "fixed",
+    top: 0,
+    zIndex: 99,
+    backgroundColor: "white",
+    height: "160px",
   },
   container: {
     maxWidth: { lg: "1300px" },

@@ -77,6 +77,7 @@ const style = {
     height: "100%",
     position: "relative",
     backgroundColor: "#F4F5F6",
+    marginTop: "150px",
   },
   container: {
     maxWidth: { lg: "1400px" },
