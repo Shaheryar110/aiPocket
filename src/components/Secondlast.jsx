@@ -15,13 +15,13 @@ function Secondlast() {
           <Grid item xs={12}>
             <Box sx={style.contentBox}>
               <Typography className={poppins.className} sx={style.heading}>
-                Enjoy Spending
+                Have Fun With
                 <span style={{ color: "#182459" }}>Your Money</span>
               </Typography>
 
               <Typography sx={style.para}>
-                Discover a stress-free spending and saving experience with our
-                user-friendly, flexible financial solution.
+                Try our user-friendly, flexible financial solution for a
+                stress-free experience with saving and spending.
               </Typography>
             </Box>
           </Grid>
@@ -29,7 +29,7 @@ function Secondlast() {
             <Box sx={style.imageSide}>
               <Image
                 src={"/heroImg.webp"}
-                // style={{ minWidth: "100%", minHeight: "100%" }}
+                style={{ width: "100%", height: "100%" }}
                 alt="oops"
                 height={449}
                 width={737}
@@ -70,7 +70,7 @@ const style = {
     alignItems: "center",
   },
   heading: {
-    fontSize: "48px",
+    fontSize: { md: "48px", sm: "38px", xs: "30px" },
     opacity: 0.8,
     fontWeight: 800,
     textAlign: "center",

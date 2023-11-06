@@ -22,18 +22,18 @@ function Hero() {
       <Box sx={style.main}>
         <Container sx={style.container}>
           <Grid container>
-            <Grid item md={6}>
+            <Grid item lg={6} xs={12}>
               <Box sx={style.contentBox}>
                 <Typography className={poppins.className} sx={style.heading}>
                   Transform Your
                 </Typography>
                 <Typography className={poppins.className} sx={style.heading}>
                   Financial{" "}
-                  <span style={{ color: "#182459" }}>Relationship</span>
+                  <span style={{ color: "#4FBF9A" }}>Relationship</span>
                 </Typography>
                 <Typography sx={style.para}>
-                  Discover a stress-free spending and saving experience with our
-                  user-friendly, flexible financial solution.
+                  Experience stress-free saving and spending with our versatile,
+                  user-friendly financial solution.
                 </Typography>
                 <Button className={poppins.className} sx={style.btn}>
                   GET STARTED
@@ -52,7 +52,7 @@ function Hero() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item md={6}>
+            <Grid item lg={6} xs={12}>
               <Box sx={style.imageSide}>
                 <Image
                   src={"/heroImg.webp"}
@@ -97,16 +97,21 @@ const style = {
     flexDirection: "column",
     justifyContent: "center",
     padding: "1rem",
+    alignItems: { lg: "start", xs: "center" },
   },
   heading: {
     fontSize: "48px",
     opacity: 0.8,
-    fontWeight: 800,
+    fontWeight: 900,
+    textAlign: { lg: "left", xs: "center" },
+    color: "#182459",
   },
   para: {
     maxWidth: "400px",
     fontWeight: 500,
     fontSize: "20px",
+    color: "#182459",
+    textAlign: { lg: "left", xs: "center" },
     color: "#182459",
   },
   btn: {
@@ -114,9 +119,9 @@ const style = {
     backgroundColor: "#182459",
     color: "white",
     fontWeight: 700,
-    fontSize: "18px",
+    fontSize: { md: "18px", xs: "15px" },
     paddingY: "10px",
-    width: "30%",
+    width: { sm: "30%", xs: "50%" },
     ":hover": {
       backgroundColor: "grey",
     },

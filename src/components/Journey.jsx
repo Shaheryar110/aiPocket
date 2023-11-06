@@ -15,17 +15,17 @@ function Journey() {
           sx={{
             color: "white",
             fontWeight: 700,
-            fontSize: "2.5rem",
+            fontSize: { md: "2.5rem", xs: "1.5rem" },
             textAlign: "center",
           }}
           className={poppins.className}
         >
-          Enjoy a Stress-Less Financial Journey
+          Savor a Stress-Free Financial Adventure
         </Typography>
         <Typography sx={{ textAlign: "center", color: "white" }}>
-          Discover clarity and gain confidence as you navigate through your
-          finances with ease. With Expenzify, take control and transform your
-          financial outlook, no complex methods required.
+          Gain confidence and clarity as you effortlessly manage your finances.
+          Take charge and improve your financial outlook with Expenzify; no
+          complicated techniques are needed.
         </Typography>
       </Container>
     </Box>

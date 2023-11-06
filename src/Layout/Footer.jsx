@@ -25,7 +25,7 @@ function Footer() {
     <Box sx={style.main}>
       <Container sx={style.container}>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item md={6} xs={12}>
             <Box sx={{ padding: "1rem" }}>
               <Typography className={poppins.className} sx={style.text}>
                 About Us
@@ -41,11 +41,16 @@ function Footer() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} xs={!2}>
             <Box>
               <Typography
                 className={poppins.className}
-                sx={{ fontSize: "18px", fontWeight: 700, opacity: "0.8" }}
+                sx={{
+                  textAlign: { md: "left", xs: "center" },
+                  fontSize: "18px",
+                  fontWeight: 700,
+                  opacity: "0.8",
+                }}
               >
                 Customer Support Hours: 24/7. support@pocketai.com
               </Typography>
@@ -56,6 +61,7 @@ function Footer() {
                   fontWeight: 700,
                   opacity: "0.8",
                   paddingY: "12px",
+                  textAlign: { md: "left", xs: "center" },
                 }}
               >
                 📍 30 North Gould Street St Ste 4, Sheridan, WY, United States,
@@ -67,6 +73,7 @@ function Footer() {
                   flexDirection: "row",
                   alignItems: "center",
                   gap: "20px",
+                  justifyContent: { md: "start", xs: "center" },
                 }}
               >
                 <FacebookIcon />
@@ -81,12 +88,13 @@ function Footer() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            paddingTop: "12px",
           }}
         >
           <Typography sx={{ opacity: 0.7 }}>
             Subscribe to your email :
           </Typography>
-          <FormControl sx={{ m: 1, width: "40%" }}>
+          <FormControl sx={{ m: 1, width: { md: "40%", xs: "100%" } }}>
             <InputLabel htmlFor="outlined-adornment-amount">Email</InputLabel>
             <OutlinedInput
               id="outlined-adornment-amount"
@@ -121,6 +129,7 @@ const style = {
     paddingY: "10px",
     opacity: 0.8,
     fontWeight: 600,
+    textAlign: { md: "left", xs: "center" },
     ":hover": {
       opacity: 1,
     },

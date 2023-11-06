@@ -12,12 +12,12 @@ function LimitedTime() {
     <Box sx={style.main}>
       <Container sx={style.container}>
         <Typography sx={style.heading} className={poppins.className}>
-          Exclusive Lifetime Access:
-          <span style={{ color: "#18247E" }}> Limited Time Offer!</span>
+          Exclusive Monthly Access:
+          <span style={{ color: "#4FBF9A" }}> Limited Time Offer!</span>
         </Typography>
         <Typography sx={style.heading} className={poppins.className}>
-          <span className="line-through">($80)</span>
-          <span style={{ color: "#AA131D" }}> $19 Only!</span>
+          <span className="line-through">($5)</span>
+          <span style={{ color: "#AA131D" }}> $2.99 Only!</span>
         </Typography>
         <Typography sx={style.heading} className={poppins.className}>
           <span style={{ color: "#AA131D" }}> +FREE E-Book</span>
@@ -47,7 +47,7 @@ const style = {
     textAlign: "center",
   },
   heading: {
-    fontSize: "40px",
+    fontSize: { sm: "40px", xs: "28px" },
     fontWeight: 800,
     opacity: 0.8,
     textAlign: "center",

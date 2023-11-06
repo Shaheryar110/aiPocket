@@ -12,18 +12,18 @@ function SuccessCard() {
   const cardData = [
     {
       img: "/dollar.webp",
-      heading: "Effortless Expense Tracking",
-      para: "Log daily expenditures with ease. Categorize, tag, and monitor where your money goes.",
+      heading: "Simple Expense Monitoring",
+      para: "With ease, track your everyday expenses. Sort, label, and keep an eye on the spending of your funds. ",
     },
     {
       img: "/detail.webp",
       heading: "Detailed Analytics",
-      para: "Unlock insights into your spending habits. Make informed decisions and adjust for a prosperous future.",
+      para: "Gain understanding of your spending patterns. Make wise choices and make adjustments for a prosperous future. ",
     },
     {
       img: "/sync.webp",
       heading: "Auto-Sync Across Devices",
-      para: "Have your finances handy. Expenzify syncs seamlessly across all devices, from desktop to mobile, keeping your financial snapshot accurate and current, wherever you go.",
+      para: "Keep your money close at hand. Expenzify syncs easily between desktop and mobile devices, ensuring that your financial snapshot is up to date and accurate no matter where you go.",
     },
   ];
   return (
@@ -32,7 +32,7 @@ function SuccessCard() {
         <Container sx={style.container}>
           <Typography sx={style.heading} className={poppins.className}>
             Features Tailored For Your
-            <span style={{ color: "#182459" }}> Financial Success!</span>
+            <span style={{ color: "#4FBF9A" }}> Financial Success!</span>
           </Typography>
           <Grid
             container
@@ -109,7 +109,7 @@ const style = {
   heading: {
     fontSize: "36px",
     fontWeight: 800,
-    opacity: 0.7,
     textAlign: "center",
+    color: "#182459",
   },
 };

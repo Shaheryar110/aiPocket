@@ -14,19 +14,19 @@ function RealStories() {
     {
       img: "/women.webp",
       qoute:
-        "I was always stressed about money, but Expenzify turned that around. In just a couple of months, I've managed to save more than I did all last year! Tis tool is easy to use and it’s like having a financial buddy.",
+        "Money was a constant source of stress for me, but Expenzify changed that. I've saved more money in the last few months than I did the entire previous year! This tool is simple to use and functions similarly to a financial friend.",
       name: "LISA R.,DENVER",
     },
     {
       img: "/men.webp",
       qoute:
-        "I've tried a bunch of budgeting apps but nothing clicked until Expenzify. It’s simple, intuitive, and it helped me cut down on my debts. Now, I can actually plan a weekend getaway without fretting about my finances.",
+        "I've used a number of budgeting apps, but until I used Expenzify, nothing worked. It's easy to use, intuitive, and it reduced my debt. I can actually plan a weekend trip now without having to worry about money.",
       name: "MARK S., AUSTIN",
     },
     {
       img: "/w1.webp",
       qoute:
-        "Expenzify has been a game-changer. I was able to save enough within the first few months to take that road trip I’d been dreaming about. It’s more than just a spreadsheet, it’s a ticket to a stress-free financial life.",
+        "The use of Pocket Ai has changed the game. In the first few months, I was able to save up enough money for the road trip of my dreams. It's a ticket to a stress-free financial life, not just a spreadsheet.",
       name: "EMILY H., SAN FRANCISCO",
     },
   ];
@@ -35,9 +35,9 @@ function RealStories() {
       <Container sx={style.container}>
         <Typography sx={style.heading} className={poppins.className}>
           On Average, Users Save
-          <span style={{ color: "#18247E" }}> $550 </span>
+          <span style={{ color: "#4FBF9A" }}> $550 </span>
           in 2 Months and
-          <span style={{ color: "#18247E" }}> $5500 </span>
+          <span style={{ color: "#4FBF9A" }}> $5500 </span>
           in the First Year
         </Typography>
         <Box
@@ -58,7 +58,12 @@ function RealStories() {
             </Typography>
           </Box>
           <Typography
-            sx={{ opacity: 0.7, fontWeight: 700, fontSize: "24px" }}
+            sx={{
+              opacity: 0.7,
+              fontWeight: 700,
+              fontSize: "24px",
+              textAlign: "center",
+            }}
             className={poppins.className}
           >
             Real Stories, Real Success
@@ -66,7 +71,7 @@ function RealStories() {
           <Grid
             container
             columnSpacing={4}
-            rowSpacing={4}
+            rowSpacing={9}
             sx={{
               display: "flex",
               justifyContent: { xl: "center" },
@@ -76,7 +81,7 @@ function RealStories() {
             {people.map((data, index) => {
               return (
                 <>
-                  <Grid item md={4} xl={3}>
+                  <Grid item md={4} xl={3} xs={12}>
                     <Box
                       sx={{
                         position: "relative",

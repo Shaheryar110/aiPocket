@@ -39,7 +39,7 @@ function Product() {
     <Box sx={style.main}>
       <Container sx={style.container}>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item md={6} xs={12}>
             <Box
               sx={{
                 width: "100%",
@@ -121,7 +121,7 @@ const style = {
     fontWeight: 700,
     fontSize: "18px",
     paddingY: "10px",
-    width: "50%",
+    width: { md: "50%", xs: "100%" },
     ":hover": {
       backgroundColor: "grey",
     },

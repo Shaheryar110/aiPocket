@@ -6,17 +6,45 @@ function Companies() {
   return (
     <Box sx={style.main}>
       <Container sx={style.container}>
-        <Grid container justifyContent={"center"}>
-          <Grid item md={3} display={"flex"} justifyContent={"center"}>
+        <Grid container justifyContent={"center"} rowSpacing={5}>
+          <Grid
+            item
+            lg={3}
+            md={6}
+            xs={12}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             <Image src={"/bloom.png"} alt="company" width={120} height={33} />
           </Grid>
-          <Grid item md={3} display={"flex"} justifyContent={"center"}>
+          <Grid
+            item
+            lg={3}
+            md={6}
+            xs={12}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             <Image src={"/forbes.png"} alt="company" width={120} height={33} />
           </Grid>
-          <Grid item md={3} display={"flex"} justifyContent={"center"}>
+          <Grid
+            item
+            lg={3}
+            md={6}
+            xs={12}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             <Image src={"/time.png"} alt="company" width={120} height={33} />
           </Grid>
-          <Grid item md={3} display={"flex"} justifyContent={"center"}>
+          <Grid
+            item
+            lg={3}
+            md={6}
+            xs={12}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             <Image src={"/buzz.png"} alt="company" width={120} height={33} />
           </Grid>
         </Grid>

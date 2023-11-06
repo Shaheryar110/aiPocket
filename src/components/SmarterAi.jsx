@@ -17,17 +17,18 @@ function SmarterAi() {
             <Box sx={style.contentBox}>
               <Typography className={poppins.className} sx={style.heading}>
                 Meet Our Ai SmartBot:{" "}
-                <span style={{ color: "#182459" }}>Your</span>
+                <span style={{ color: "#4FBF9A" }}>Your</span>
               </Typography>
               <Typography className={poppins.className} sx={style.heading}>
-                <span style={{ color: "#182459" }}> Financial Ally</span>
+                <span style={{ color: "#4FBF9A" }}> Financial Ally</span>
               </Typography>
               <Typography sx={style.para}>
-                Our SmartBot is here to make your financial journey easier. Get
-                personalized advice on managing your money, effortlessly.
+                We have our SmartBot to assist you in simplifying your financial
+                journey. Obtain easy, personalized financial management
+                guidance.
               </Typography>
               <Button className={poppins.className} sx={style.btn}>
-                GET STARTED Now!
+                GET STARTED NOW!
               </Button>
             </Box>
           </Grid>
@@ -35,7 +36,7 @@ function SmarterAi() {
             <Box sx={style.imageSide}>
               <Image
                 src={"/form.webp"}
-                style={{ minWidth: "100%", minHeight: "100%" }}
+                style={{ width: "100%", height: "100%" }}
                 alt="oops"
                 height={449}
                 width={637}
@@ -76,7 +77,7 @@ const style = {
     padding: "1rem",
   },
   heading: {
-    fontSize: "48px",
+    fontSize: { md: "48px", sm: "38px", xs: "30px" },
     opacity: 0.8,
     fontWeight: 800,
   },
@@ -91,9 +92,9 @@ const style = {
     backgroundColor: "#182459",
     color: "white",
     fontWeight: 700,
-    fontSize: "18px",
+    fontSize: { sm: "18px", xs: "15px" },
     paddingY: "10px",
-    width: "60%",
+    width: { md: "60%", xs: "100%" },
     ":hover": {
       backgroundColor: "grey",
     },

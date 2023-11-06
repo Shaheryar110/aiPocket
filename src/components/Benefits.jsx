@@ -29,7 +29,7 @@ export default function Benefits() {
   return (
     <Box sx={style.main}>
       <Container sx={style.container}>
-        <Grid container>
+        <Grid container rowSpacing={8}>
           {data.map((data, index) => {
             return (
               <>
